@@ -264,7 +264,7 @@ class State(NamedTuple):
             else:
                 place_first = State.__annotations__['place_first'](1)
 
-            seed = lux_state.seed if lux_state.seed is not None else INT32_MAX
+            seed = 0#lux_state.seed if lux_state.seed is not None else INT32_MAX
 
             state = State(
                 env_cfg=env_cfg,
