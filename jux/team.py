@@ -116,7 +116,7 @@ class Team(NamedTuple):
             factories_to_place=lux_team.factories_to_place,
             factory_strains=factory_strains,
             n_factory=n_factory,
-            bid=lux_team.bid,
+            bid=0,#lux_team.bid,
         )
 
     def to_lux(
