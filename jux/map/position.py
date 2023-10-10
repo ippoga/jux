@@ -30,7 +30,7 @@ class Position(NamedTuple):
 
     @classmethod
     def from_lux(cls, lux_pos: LuxPosition) -> "Position":
-        return cls(jnp.array(lux_pos.pos, dtype=jnp.int8))
+        return cls(jnp.array(lux_pos, dtype=jnp.int8))
 
     def to_lux(self) -> LuxPosition:
         return LuxPosition(np.array(self.pos))
