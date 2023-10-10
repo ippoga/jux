@@ -111,8 +111,8 @@ class Team(NamedTuple):
         return cls.new(
             team_id=lux_team.team_id,
             faction=FactionTypes.from_lux(lux_team.faction),
-            init_water=1#lux_team.init_water,
-            init_metal=1#lux_team.init_metal,
+            init_water=1,#lux_team.init_water,
+            init_metal=1,#lux_team.init_metal,
             factories_to_place=lux_team.factories_to_place,
             factory_strains=factory_strains,
             n_factory=n_factory,
