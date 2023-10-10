@@ -186,7 +186,7 @@ class Board(NamedTuple):
 
     @classmethod
     def from_lux(cls: Type['Board'], lux_board: LuxBoard, buf_cfg: JuxBufferConfig) -> "Board":
-        height, width = lux_board.height, lux_board.width
+        height, width = 64,64#lux_board.height, lux_board.width
 
         lichen = jnp.array(lux_board.lichen, dtype=Board.__annotations__['lichen'])
 
